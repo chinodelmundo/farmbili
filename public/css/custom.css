@@ -1,0 +1,305 @@
+/*!
+ * Start Bootstrap - SB Admin 2 Bootstrap Admin Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+.badge-sidebar{
+   background:red;
+   position:relative;
+   font-size: 10px;
+   top: -3px;
+   left: 10px;
+}
+
+.custom-form {
+  border: 0px;
+}
+
+.custom-dropdown{
+    width:350px;
+    border-color: #e7e7e7;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.badge-notify-buyer{
+   background:red;
+   position:relative;
+   top: 5px;
+   left: -120px;
+   font-size: 10px;
+}
+
+.badge-notify{
+   background:red;
+   position:relative;
+   top: 5px;
+   left: -170px;
+   font-size: 10px;
+}
+
+.table-custom {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table-custom > tbody > tr > td {
+  white-space: nowrap;
+  overflow: hidden;         /* <- this does seem to be required */
+  text-overflow: ellipsis;
+}
+
+.table-product-grid > tbody > tr > td {
+    font-size: 10pt;
+}
+
+.table-activities > tbody > tr > td {
+    font-size: 10pt;
+}
+
+.table > tbody > tr > td > img {
+  width:150px; height:110px; margin-bottom: 10px;
+}
+
+.table > tbody > tr > td > a > img {
+  width:150px; height:110px; margin-bottom: 10px;
+}
+
+.image-container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.images {
+    margin-bottom: 10px;
+}
+
+.navbar-top-links .dropdown-messages,
+.navbar-top-links .dropdown-tasks,
+.navbar-top-links .dropdown-alerts {
+    width: 310px;
+    min-width: 0;
+}
+
+.navbar-top-links .dropdown-messages {
+    margin-left: 5px;
+}
+
+.navbar-top-links .dropdown-tasks {
+    margin-left: -59px;
+}
+
+.navbar-top-links .dropdown-alerts {
+    margin-left: -123px;
+}
+
+.navbar-top-links .dropdown-user {
+    right: 0;
+    left: auto;
+}
+
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.sidebar .sidebar-search {
+    padding: 15px;
+}
+
+.sidebar ul li {
+    border: 1px solid #e7e7e7;
+}
+
+.sidebar ul li a.active {
+    background-color: #eee;
+}
+
+.sidebar .arrow {
+    float: right;
+}
+
+.sidebar .fa.arrow:before {
+    content: "\f107";
+}
+
+.sidebar .active>a>.fa.arrow:before {
+    content: "\f106";
+}
+
+.sidebar .nav-second-level li,
+.sidebar .nav-third-level li {
+    border-bottom: 0!important;
+}
+
+.sidebar .nav-second-level li a {
+    padding-left: 37px;
+}
+
+.sidebar .nav-third-level li a {
+    padding-left: 52px;
+}
+
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+    background: 0 0;
+}
+
+table.dataTable thead .sorting_asc:after {
+    content: "\f0de";
+    float: right;
+    font-family: fontawesome;
+}
+
+table.dataTable thead .sorting_desc:after {
+    content: "\f0dd";
+    float: right;
+    font-family: fontawesome;
+}
+
+table.dataTable thead .sorting:after {
+    content: "\f0dc";
+    float: right;
+    font-family: fontawesome;
+    color: rgba(50,50,50,.5);
+}
+
+/** User profiles CSS **/
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+img:hover {
+  -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.img-rounded{
+  height: auto;
+  width: 200px;
+
+}
+.profile-panel {
+  padding: 5px;
+  margin: 5px;
+  background-color: #ffffff;
+  border-radius: 0px; !important
+}
+
+/** Texts **/
+body{
+  font-family: 'Open Sans', sans-serif;
+  cursor: default;
+}
+
+.bold-red-white-bg{
+  background-color: #df5845; //#cc3300;
+  color: #ffffff;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;  
+}
+
+/** Buttons **/
+.btn{
+  border-radius: 0px;
+  padding: 10px;
+  background-color: #cc3300;
+  border-color: #cc3300;
+  color: #ffffff;
+  border-width: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.btn:hover{
+  background-color: #ffffff;
+  border-width: 2px;
+  border-color: #cc3300;
+  color: #cc3300;
+  -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+/** Carousel **/
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}
+/** Welcome Page **/
+
+#welcome-tagline{
+  margin-top: 10%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#welcome-banner{
+    margin-top: ;
+    height: 500px;
+    background-image: url("../images/welcome-jumbotron.png");
+    background-size: cover;
+}
+
+
+/** Administrator Page **/
+
+#admin-sidebar{
+  //background-color: #df5845;
+  //color: #ffffff;
+
+}
+
+a, a:hover{
+  color: #cc3300;
+}
+
+.add-margin{
+  margin-top: 20px;
+}
+
+.fixed-position{
+  position: fixed;
+}
+
+body { padding-top: 70px; }
