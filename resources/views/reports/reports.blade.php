@@ -28,7 +28,7 @@
             @endif
 
             @if(Auth::User()->user_type == 0)
-                <div class="panel panel-warning">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         Unanswered Reports
                     </div>
@@ -62,7 +62,7 @@
                     </div>
                 </div>
 
-                <div class="panel panel-success">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         Answered Reports
                     </div>

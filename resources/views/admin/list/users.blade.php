@@ -9,7 +9,7 @@
         </div>
 
         <div class="col-md-10">
-            <h3 class="page-header"> <span class="glyphicon glyphicon-user"></span> Users </h3>
+            <h3 class="page-header"> <span class="glyphicon glyphicon-user"></span> All Users </h3>
 
             <div class="panel panel-default">
                 <div class="panel-body">

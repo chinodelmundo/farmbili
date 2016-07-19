@@ -185,8 +185,8 @@
                                 </div>
                             </li>
                         @endif
-
                         <li class="dropdown">
+                            
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 {{ Auth::user()->get_name() }} <span class="caret"></span>
                             </a>

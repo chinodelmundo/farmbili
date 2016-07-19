@@ -18,7 +18,7 @@
                                         <th>
                                             <b>Total Users</b>
                                         </th>
-                                        <td>
+                                        <td align="right">
                                             <a href="users/all"><b>{{ $users_stats[0] }}</b></a>
                                         </td>
                                     </tr>
@@ -36,7 +36,7 @@
                                         <td>
                                             Retailers
                                         </td>
-                                        <td  align="right">
+                                        <td align="right">
                                             <a href="users/retailers">{{ $users_stats[2] }}</a>
                                         </td>
                                     </tr>
@@ -122,7 +122,7 @@
                                         <th>
                                             <b>Total Transactions</b>
                                         </th>
-                                        <td>
+                                        <td align="right">
                                             <a href="transactions/all"><b>{{ $transactions_stats[0] }}</b></a>
                                         </td>
                                     </tr>

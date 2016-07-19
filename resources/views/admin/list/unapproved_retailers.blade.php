@@ -62,19 +62,24 @@
                                         <td>{{ $user->city }}</td>
                                         <td>{{ $user->created_at->toDateString() }}</td>
                                         <td>
-                                            <table class="table-condensed">
+                                            <table class="table-condensed" align="center">
+                                                
                                                 <tr>
                                                     <td>
-                                                        <form  method="POST" action="{{ route('retailer.approve', $user->id) }}">
-                                                            <input type="hidden" name="_method" value="PUT">
-                                                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                                            <input type="submit" class="btn btn-success btn-sm" value="Approve">
-                                                        </form>
+                                                        <center>
+                                                            <a href="{{ route('profile.edit', $user->id) }}" class="btn btn-primary btn-sm"> Edit </a>
+                                                        </center>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <a href="{{ route('profile.edit', $user->id) }}" class="btn btn-primary btn-sm"> Edit </a>
+                                                        <center>
+                                                            <form  method="POST" action="{{ route('retailer.approve', $user->id) }}">
+                                                                <input type="hidden" name="_method" value="PUT">
+                                                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                                                <input type="submit" class="btn btn-success btn-sm" value="Approve">
+                                                            </form>
+                                                        </center>
                                                     </td>
                                                 </tr>
                                             </table>

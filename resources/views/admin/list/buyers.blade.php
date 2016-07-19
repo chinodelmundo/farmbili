@@ -63,7 +63,9 @@
                                         <td>{{ $user->city }}</td>
                                         <td>{{ $user->created_at->toDateString() }}</td>
                                         <td>
-                                            <a href="{{ route('profile.edit', $user->id) }}" class="btn btn-primary btn-sm"> Edit </a>
+                                            <center>
+                                                <a href="{{ route('profile.edit', $user->id) }}" class="btn btn-primary btn-sm"> Edit </a>
+                                            </center>
                                         </td>
                                     </tr>
                                 @endforeach

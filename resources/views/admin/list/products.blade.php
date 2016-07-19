@@ -43,7 +43,7 @@
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col-md-3">
-                                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                                                                     </div>
                                                                 </div>
                                                             </div>

@@ -9,7 +9,7 @@
         </div>
 
         <div class="col-md-10">
-            <h3 class="page-header"> <span class="glyphicon glyphicon-user"></span> Retailers </h3>
+            <h3 class="page-header"> <span class="glyphicon glyphicon-user"></span> Approved Retailers </h3>
 
             <div class="panel panel-default">
                 <div class="panel-body">
@@ -64,19 +64,23 @@
                                         <td>{{ $user->city }}</td>
                                         <td>{{ $user->created_at->toDateString() }}</td>
                                         <td colspan="2">
-                                            <table class="table-condensed">
+                                            <table class="table-condensed" align="center">
                                                 <tr>
                                                     <td>
-                                                        <a href="{{ route('profile.edit', $user->id) }}" class="btn btn-primary btn-sm"> Edit </a>
+                                                        <center>
+                                                            <a href="{{ route('profile.edit', $user->id) }}" class="btn btn-primary btn-sm"> Edit </a>
+                                                        </center>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <form  method="POST" action="{{ route('retailer.unapprove', $user->id) }}">
-                                                            <input type="hidden" name="_method" value="PUT">
-                                                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                                            <input type="submit" class="btn btn-danger btn-sm" value="Unapprove">
-                                                        </form>
+                                                        <center>
+                                                            <form  method="POST" action="{{ route('retailer.unapprove', $user->id) }}">
+                                                                <input type="hidden" name="_method" value="PUT">
+                                                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                                                <input type="submit" class="btn btn-danger btn-sm" value="Unapprove">
+                                                            </form>
+                                                        </center>
                                                     </td>
                                                 </tr>
                                             </table>
