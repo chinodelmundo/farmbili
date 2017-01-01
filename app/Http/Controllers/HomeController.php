@@ -63,13 +63,13 @@ class HomeController extends Controller
             $dates_array = array();
 
             for($i = 0; $i < 5; $i++){
-                $monthly_stats[$i][0] = User::whereMonth('created_at', '=', Carbon::today()->month - $i - 4)
+                $monthly_stats[$i][0] = User::whereMonth('created_at', '=', Carbon::today()->month - $i)
                     ->count();
-                $monthly_stats[$i][1] = Product::whereMonth('created_at', '=', Carbon::today()->month - $i - 4)
+                $monthly_stats[$i][1] = Product::whereMonth('created_at', '=', Carbon::today()->month - $i)
                     ->count();
-                $monthly_stats[$i][2] = Transaction::whereMonth('created_at', '=', Carbon::today()->month - $i - 4)
+                $monthly_stats[$i][2] = Transaction::whereMonth('created_at', '=', Carbon::today()->month - $i)
                     ->count();
-                $dates_array[$i] = substr(Carbon::today()->subMonth($i + 4)->toDateString(), 0, 7);
+                $dates_array[$i] = substr(Carbon::today()->subMonth($i)->toDateString(), 0, 7);
             }
 
             $activities = Activity::where('user_id', '>','0')
